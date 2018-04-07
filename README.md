@@ -28,7 +28,7 @@ docker build -t "<tag_name>" .
 '''
 docker run <tag_name> <crypto_cyrrency_symbol>
 '''
-	NOTE: The program requires the argument "<crypto_cyrrency_symbol>" to be set!
+	NOTE: The program requires the argument "<crypto_cyrrency_symbol>" to be set.
 	
 ### Example
 
