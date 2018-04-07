@@ -1,0 +1,25 @@
+
+apply plugin: 'java-library'
+apply plugin: 'eclipse'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+
+repositories {
+    mavenCentral()
+}
+
+jar {
+	manifest {
+        attributes 'Main-Class': 'com.shokoladenmarmot.HugoHealth.start.Main'
+    }
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+}
+
+dependencies {
+
+    testImplementation 'junit:junit:4.12'
+    compile 'org.json:json:20171018'
+}
+
