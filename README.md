@@ -32,11 +32,11 @@ docker run <tag_name> <crypto_cyrrency_symbol>
 	
 ### Example
 
-'''
+```
 ./gradle clean build
 docker build -t "hugo-crypo" .
 docker run hugo-crypto bitcoin
-'''
+```
 	
 ## Built With
 
